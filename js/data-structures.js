@@ -35,3 +35,21 @@ console.log(number, typeof number);
 
 number = Number(number);
 console.log(number, typeof number);
+
+let number2 = +null; // another way to convert other types to number
+console.log(number2, typeof number2);
+
+// Convert binary to decimal
+let numberb = +"0b1111"; // to ocatl "0o1111";
+console.log(numberb, typeof numberb);
+
+// covert number to string
+console.log(numberb.toString(), typeof numberb.toString());
+
+let price = 100.7848;
+roundedPrice = price.toFixed(2);
+console.log(price.toLocaleString('ar-EG'));
+
+// parseFloat
+console.log(parseFloat(price));
+console.log(parseInt(price));
