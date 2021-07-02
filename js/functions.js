@@ -42,7 +42,6 @@ function subtract(a, b) { // load first of all things
 // }
 
 
-
 // functional statement // load line by line
 // we can pass default value
 let multiply = function (a, b = 1) {
@@ -53,6 +52,25 @@ let sub = calculate(multiply, 100, 8);
 let summ = calculate(sum, 100, 8);
 let mul = calculate(multiply, 100);
 console.log(sub, summ, mul);
+
+// infinite params
+function calculation(func, a, ...num) {
+    return func(a, num);
+}
+
+const plus = function(a, numbers) {
+    result = a;
+
+    for(let i = 0; i < numbers.length; i++) {
+        result = result + numbers[i];
+    }
+
+    return result;
+}
+
+console.log(calculation(plus, 10, 10, 23));
+
+
 
 
 
